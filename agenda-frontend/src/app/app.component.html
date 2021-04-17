@@ -1,0 +1,44 @@
+<header>
+  <p-menubar>
+    <ng-template pTemplate="start">
+   <div class="circle" pTooltip="@vinricardo"></div>
+    </ng-template>
+    <ng-template pTemplate="end">
+      <nav>
+        <ul class="menubar-list p-menubar-root-list">
+          <li class="p-menuitem"><a href="#" class="p-menuitem-link p-ripple">INÍCIO</a></li>
+          <li class="p-menuitem"><a href="#calendar" class="p-menuitem-link p-ripple">CALENDÁRIO</a></li>
+        </ul>
+    </nav>
+    </ng-template>
+  </p-menubar>
+</header>
+<section>
+  <div class="init">
+    <p class="header-init roboto-regular">Organize sua rotina, otimize seu tempo!</p>
+    <p class="body-init roboto-light">Utilize o calendário para ter um guia na ordem de seus compromissos</p>
+    <img src="../assets/images/ft1.png"/>
+  </div>
+</section>
+<section class="calendar" id="calendar">
+  <div class="init2">
+    <p class="header-init2 roboto-regular">Calendário</p>
+    <p class="body-init2 roboto-light">Organize seu tempo</p>
+  </div>
+  <full-calendar deepChangeDetection="true" [options]="calendarOptions"></full-calendar>
+
+<section class="add-event-section">
+  <div class="add-event p-mt-3">
+  <div class="add-event-text p-ml-6 p-pl-6">
+    <p class="roboto-regular add-event-header p-ml-6">Adicionar Evento</p>
+    <p class="roboto-light add-event-body p-ml-6">Marque um compromisso</p>
+  </div>
+  <div class="add-event-inputs p-ml-6 p-mt-6">
+      <input type="text" [(ngModel)]="titleEvent" pInputText placeholder="Digite o título do evento" id="idTitle"/>
+  <p-calendar [(ngModel)]="dateEvent" class="p-ml-4 p-mr-6" placeholder="Selecione a data" id="idData"></p-calendar>
+    <button pButton type="button" icon="pi pi-check" class="p-button-text p-button-success" (click)="addEvent()" pTooltip="Confirmar"></button>
+  </div>
+</div>
+</section>
+
+</section>

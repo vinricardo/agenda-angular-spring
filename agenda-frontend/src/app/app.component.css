@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+::ng-deep .p-menubar {
+  background-color: #fff;
+  border: none;
+}
+
+::ng-deep ul.menubar-list {
+  margin-right: 40vw !important;
+}
+
+::ng-deep li.p-menuitem {
+  font-weight: bold;
+}
+
+.circle {
+  margin-left: 2rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: #1a1a1a;
+  background-image: url("https://avatars.githubusercontent.com/u/47681059?v=4");
+  background-size: cover;
+}
+
+.init {
+  margin-top: 10%;
+  width: 40%;
+  max-width: 33vw;
+  margin-left: 10%;
+  justify-content: center;
+}
+
+.init2 {
+  margin-top: 10%;
+  width: 40%;
+  max-width: 33vw;
+  margin-left: 50%;
+  text-align: end;
+}
+
+.header-init {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: -1rem;
+  color: #1f3821;
+}
+
+.body-init {
+  font-size: 1.5rem;
+}
+
+.header-init2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: -1rem;
+  color: rgba(242, 117, 85, 1);
+}
+
+.body-init2 {
+  font-size: 2rem;
+}
+
+.add-event {
+  width: 80%;
+  margin: 0 auto 0;
+  display: flex;
+  background-color: rgba(214, 214, 214, 0.123);
+  border-radius: 2rem;
+}
+
+.add-event-section {
+  width: 100%;
+  justify-content: center;
+}
+
+.add-event-header {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: -1rem;
+}
+
+.add-event-body {
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+
+img {
+  margin-top: -28vh;
+  margin-left: 32vw;
+}
+
+::ng-deep .fc {
+  font-family: "Roboto";
+  width: 70%;
+  display: block;
+  margin: 0 auto 0;
+}
+
+.calendar {
+  margin-top: 10%;
+  justify-content: center;
+}
+
+::ng-deep .fc-today-button {
+  margin: 2rem 7rem 0 !important;
+}
+
+::ng-deep .fc-button-primary {
+  background-color: #1a1a1a !important;
+  border: #1a1a1a 1.2px solid !important;
+}
+
+::ng-deep .fc-button-group {
+  margin-top: -3.5rem !important;
+}
