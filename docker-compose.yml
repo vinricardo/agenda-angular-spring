@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  backendserver:
+    build: ./agenda-backend/
+    ports:
+      - "8080:8080"
+    restart: always
+  frontend:
+    build: ./agenda-frontend/
+    depends_on:
+      - "backendserver"
+    ports:
+      - "80:80"
